@@ -22,7 +22,7 @@ app.use((req, res, next)=>{
 
 // app.use((req,res,next)=>{
 //     res.render('maintence.hbs');
-// }) TEsTE 3
+// }) TEsTE 4
 
 app.use(express.static(__dirname + '/public'));
 
