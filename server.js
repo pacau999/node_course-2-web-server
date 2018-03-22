@@ -37,12 +37,21 @@ hbs.registerHelper('capitalize', (text)=>{
 });
 
 app.get('/',(req,res)=>{
-   // res.send('<h1>Hello Express!</h1>');
+  
     res.render('home.hbs',{
         pageTitle:'HOMI',
         curte:'rola grossa'
     });
 });
+
+app.get('/portfolios',(req,res)=>{
+
+     res.render('portfolios.hbs',{
+         pageTitle:'Portfolios',
+         
+     });
+ });
+ 
 
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
